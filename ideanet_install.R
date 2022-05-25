@@ -1,3 +1,4 @@
+options(repos=structure(c(CRAN="http://cran.us.r-project.org")))   # select a cran mirror to install packages if needed
 
 if (!require(rlang)){
   install.packages("rlang")
