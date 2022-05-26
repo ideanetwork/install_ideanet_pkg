@@ -1,0 +1,12 @@
+
+TWEET TEXT
+I developed an app for #GroupConceptMapping using #Rstats that uses a menu driven interface for managing data, computation and visualization. App is open source, so free to use. This is a development version but thought I would share in case #eval colleagues and others may be interested in trying it out. If interested, respond to me directly, I'll share link details. 
+
+
+EMAIL TEXT FOR THOSE INTERESTED
+
+Thanks for your interest.
+
+
+EXTRA TEXT
+Also hoping to share  more at annual AEA #evaluation conference later this year. 

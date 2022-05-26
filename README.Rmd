@@ -1,7 +1,22 @@
-Ideanet
-================
-Dan McLinden - Idea Networks, LLC
-2022-05-26
+---
+title: "Ideanet"
+subtitle: "A menu driven application for concept mapping"
+author: "Dan McLinden - Idea Networks, LLC"
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    keep_html: false
+  pdf_document:
+    keep_md: true
+urlcolor: blue
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ### About concept mapping
 
@@ -14,7 +29,7 @@ of a community to work individually to:
 -   Generate ideas in response to a specific challenge
 
 -   Organize all of the collected ideas into groups of similar ideas
-    that they \[participants\] individually create and name
+    that they [participants] individually create and name
 
 -   Optionally, assess (e.g., rate) ideas on one or more measure of
     value (e.g., importance, feasibility).
@@ -25,7 +40,7 @@ priorities; the collective wisdom of the group. While visualization is
 driven by sophisticated algorithms, the graphics are interpretable
 without knowledge of the underlying mathematics. As such, community
 members that provided individual input can work together to interpret
-their group’s results and plan actions.
+their group's results and plan actions.
 
 ### About the Ideanet application
 
@@ -46,7 +61,7 @@ requires that the code and any ensuing modifications be made publicly
 available, allowing the entire community to benefit.
 
 Send suggestions, questions, improvements, etc. to:
-<info@ideanetworks.io>
+[info\@ideanetworks.io](mailto:info@ideanetworks.io){.email}
 
 This is a development version, improvements to the code and additional
 functions are in the process of being created and tested. The code has
@@ -60,7 +75,7 @@ has **not** been tested in a macOS environment.
 This code has been developed ad tested using version 4.2 of R. I use
 RStudio (explained below) when working with R. At present the newest
 version of R is causing problems with RStudio. I recommend downloading
-the “patched” version of R if you use RStudio now or may do so in the
+the "patched" version of R if you use RStudio now or may do so in the
 future. R-4..2 Patched can be downloaded at the URL below. I recommend
 accepting all of the defaults.
 
@@ -82,14 +97,14 @@ software.
 
 #### RStudio install
 
--   If you downloaded the file “*ideanet_install.R*” then you can
+-   If you downloaded the file "*ideanet_install.R*" then you can
     double-click on that file to open Rstudio with the code in the
     source window.
 
 -   If RStudio is already open then, on the menu click on *File, Open
     file,* and navigate to the file and click to open.
 
--   If you do not have the the file “*ideanet_install.R*” then copy and
+-   If you do not have the the file "*ideanet_install.R*" then copy and
     paste the code below into RStudio *source* window.
 
 -   Once the code is visible in the RStudio source window, click on
@@ -98,18 +113,19 @@ software.
 
 #### Base R install
 
--   If you downloaded the file “*ideanet_install.R*” you can
+-   If you downloaded the file "*ideanet_install.R*" you can
     double-click on that file to open R or if R is already open then, on
     the menu, click on *open script* and navigate to the file.
 
--   If you do not have the file “*ideanet_install.R*” then from the
+-   If you do not have the file "*ideanet_install.R*" then from the
     menu, click on *File, New script* and then copy and paste the code
     below into blank editor window.
 
 -   Once the code is available then, on the menu click on *Edit*, *Run
     All*.
 
-``` r
+```{r, message = FALSE, warning=FALSE, echo=TRUE, eval=FALSE}
+
 options(repos=structure(c(CRAN="http://cran.us.r-project.org")))#cran mirror
 
 if (!require(rlang)){
@@ -128,15 +144,16 @@ if (!require(devtools)){
 pacman::p_unlock() # remove 00lock if present
 
 remotes::install_github("ideanetwork/ideanet", force = TRUE) 
+
 ```
 
 ### 3. Run the Ideanet application
 
-If you have a copy of “*run_ideanet.R”* on your computer then follow the
+If you have a copy of "*run_ideanet.R"* on your computer then follow the
 same procedure as described above for installing Ideanet except, in this
-case use, *run_ideanet.R*. If you do not have the the
-file”run_ideanet.R” then copy and paste the code below following the
-same procedures described above.
+case use, *run_ideanet.R*. If you do not have the the file
+"run_ideanet.R" then copy and paste the code below following the same
+procedures described above.
 
 Once executed the code will open the program. Sometimes the Ideanet app
 will open behind other windows applications. Look on your task bar for
@@ -148,7 +165,8 @@ accept input because the Ideanet application has control of R
 environment. To stop using the app and regain control of R or RStudio
 click *Quit, Close app*.
 
-``` r
+```{r, message = FALSE, warning=FALSE, echo=TRUE, eval=FALSE}
+
 options(repos=structure(c(CRAN="http://cran.us.r-project.org")))#cran mirror 
 
 if (!require(pacman)){
@@ -158,6 +176,7 @@ if (!require(pacman)){
 pacman::p_unlock() # remove 00lock if present
 
 Ideanet::ideanet() # open the application.
+
 ```
 
 ### 4. Use the Ideanet application
