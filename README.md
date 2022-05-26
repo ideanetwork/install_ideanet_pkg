@@ -19,26 +19,39 @@ of a community to work individually to:
 -   Optionally, assess (e.g., rate) ideas on one or more measure of
     value (e.g., importance, feasibility).
 
-Mathematical algorithms integrate the individual contributions from
-multiple people into maps that show the detailed ideas, themes and
-priorities; the collective wisdom of the group. While visualization is
-driven by sophisticated algorithms, the graphics are interpretable
-without knowledge of the underlying mathematics. As such, community
-members that provided individual input can work together to interpret
-their group’s results and plan actions.
+Algorithms integrate the individual contributions from multiple people
+into maps that show the detailed ideas, themes and priorities; the
+collective wisdom of the group. While visualization is driven by
+sophisticated algorithms, the graphics are intuitive, knowledge of the
+underlying mathematics is not needed. As such, community members that
+provided individual input can work together to interpret their group’s
+results and plan actions.
+
+### About Idea Networks
+
+Idea Networks helps communities address wicked problems and
+organizations pursue audacious goals with a state of the art methodology
+grounded in the science of networks.
+
+[Learn more: Idea
+Networks](https://ideanetworks.io/ "More information about Idea Networks, LLC")
 
 ### About the Ideanet application
 
 Ideanet is a software application to support concept mapping. The
 application provides a menu-driven interface for data management,
-computation, and visualization for a concept mapping project.
+computation, and visualization for a concept mapping project. This is a
+development version, improvements to the code and additional functions
+are in the process of being developed and tested. The code has been
+developed and tested in a Windows PC environment. This application has
+**not** been developed for or tested in a macOS environment.
 
 The program distributed here is shared in the hope that this will be
 useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. This work is
 licensed under the GNU General Public License v3.0, a link to the
 details of the license can be found at:
-[License](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 You are free to use this program, share with others and make and share
 changes to the code. If you do make changes, the software license
@@ -48,37 +61,28 @@ available, allowing the entire community to benefit.
 Send suggestions, questions, improvements, etc. to:
 <info@ideanetworks.io>
 
-This is a development version, improvements to the code and additional
-functions are in the process of being created and tested. The code has
-been developed and tested in a Windows PC environment. This application
-has **not** been tested in a macOS environment.
-
 ## How to get started with Ideanet
 
 ### 1. Download supporting software
 
-This code has been developed ad tested using version 4.2 of R. I use
-RStudio (explained below) when working with R. At present the newest
-version of R is causing problems with RStudio. I recommend downloading
-the “patched” version of R if you use RStudio now or may do so in the
-future. R-4..2 Patched can be downloaded at the URL below. I recommend
-accepting all of the defaults.
+This code has been developed ad tested using version 4.2 of R but should
+work will earlier versions of R that are at least 4.0 and above. If you
+need to add R to your computer, I recommend downloading the “patched”
+version of the newest version of R. [Download & Install R 4.2.0
+patched](https://cran.r-project.org/bin/windows/base/rpatched.html).
 
-[Download & Install R 4.2.0
-patched](https://cran.r-project.org/bin/windows/base/rpatched.html)
-
-Rstudio desktop is recommended for running R code, a free version can be
-accessed here:
-[Rstudio](https://www.rstudio.com/products/rstudio/download/ "Download free desktop version")
+In next steps I describe how to run code that will install and launch
+the application. The downloaded R program has an interface that can be
+used to install and run the code below. However, I prefer to use RStudio
+for launching and running code. If you wish to also use RStudio a free
+version of Rstudio desktop can be accessed here:
+[Rstudio](https://www.rstudio.com/products/rstudio/download/ "Download free desktop version").
 
 ### 2. Install Ideanet application
 
 Run the following code to install the application. This code only needs
 to be run once to install the application. Run this code again, in the
 future, as needed, to install newer versions of the Ideanet application.
-While I prefer using RStudio for editing and running code, launching
-Base R will open an interface that can be used to install and run the
-software.
 
 #### RStudio install
 
@@ -134,19 +138,19 @@ remotes::install_github("ideanetwork/ideanet", force = TRUE)
 
 If you have a copy of “*run_ideanet.R”* on your computer then follow the
 same procedure as described above for installing Ideanet except, in this
-case use, *run_ideanet.R*. If you do not have the the
-file”run_ideanet.R” then copy and paste the code below following the
-same procedures described above.
+case use *run_ideanet.R*. If you do not have the the file”run_ideanet.R”
+then copy and paste the code below following the same procedures
+described above.
 
 Once executed the code will open the program. Sometimes the Ideanet app
 will open behind other windows applications. Look on your task bar for
-*feather icon* or use the hot keys (Alt+Tab) to tab through open
-applications to find Ideanet.
+*feather icon*, this is the icon for the app. Alternatively, use the hot
+keys (Alt+Tab) to tab through open applications to find Ideanet.
 
 Note that once the Ideanet application is open, R and RStudio will not
 accept input because the Ideanet application has control of R
-environment. To stop using the app and regain control of R or RStudio
-click *Quit, Close app*.
+environment. To stop using the app and regain control of R or RStudio,
+in the Ideanet menu click *Quit, Close app*.
 
 ``` r
 options(repos=structure(c(CRAN="http://cran.us.r-project.org")))#cran mirror 
@@ -189,13 +193,14 @@ by entering details about demographics and the measures.
 
 ##### Compute maps
 
-Multidimensional scaling (MDS) computes the location of points in two
-dimensions and computes a stress value for the solution. Label analysis
-computes the location for each label from each participant on the map.
-The map of items is partitioned with hierarchical cluster analysis to
-produce multiple cluster solutions. The app will create three output
-files that are useful for choosing an optimal cluster solution for
-further analysis:
+Multidimensional scaling computes the location of points in two
+dimensions and computes a stress value for the solution. The map of
+items is partitioned with hierarchical cluster analysis to produce
+multiple cluster solutions. Label analysis computes the location for
+each label from each participant on the map and is used to suggestion
+names for clusters. The app will create three output files that are
+useful for choosing an optimal cluster solution for further analysis and
+reporting:
 
 -   An Excel workbook with cluster solutions and cluster labels
 
@@ -207,7 +212,7 @@ further analysis:
 ##### Create cluster report
 
 Once a cluster solution is selected, this option creates a slide deck
-that is a detailed report for that cluster solution.
+that is a detailed report for the selected cluster solution.
 
 ##### Analyze values
 
