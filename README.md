@@ -3,6 +3,15 @@ Ideanet
 Dan McLinden - Idea Networks, LLC
 2022-05-26
 
+### About Idea Networks
+
+Idea Networks helps communities address wicked problems and
+organizations pursue audacious goals with a state of the art methodology
+grounded in the science of networks.
+
+[Learn more: Idea
+Networks](https://ideanetworks.io/ "More information about Idea Networks, LLC")
+
 ### About concept mapping
 
 Concept mapping a method for crowd-sourcing the understanding of and/or
@@ -26,15 +35,6 @@ sophisticated algorithms, the graphics are intuitive, knowledge of the
 underlying mathematics is not needed. As such, community members that
 provided individual input can work together to interpret their group’s
 results and plan actions.
-
-### About Idea Networks
-
-Idea Networks helps communities address wicked problems and
-organizations pursue audacious goals with a state of the art methodology
-grounded in the science of networks.
-
-[Learn more: Idea
-Networks](https://ideanetworks.io/ "More information about Idea Networks, LLC")
 
 ### About the Ideanet application
 

@@ -6,4 +6,5 @@
 *.JPG
 *.txt
 *.Rproj
+*.html
 tweet_emails.Rmd
