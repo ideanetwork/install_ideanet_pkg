@@ -1,7 +1,7 @@
 Ideanet
 ================
 Dan McLinden - Idea Networks, LLC
-2022-05-26
+2022-05-27
 
 ### About Idea Networks
 
@@ -40,23 +40,24 @@ results and plan actions.
 
 Ideanet is a software application to support concept mapping. The
 application provides a menu-driven interface for data management,
-computation, and visualization for a concept mapping project. This is a
-development version, improvements to the code and additional functions
-are in the process of being developed and tested. The code has been
-developed and tested in a Windows PC environment. This application has
-**not** been developed for or tested in a macOS environment.
+computation, and visualization for a concept mapping project. The
+application was built in R, a language and environment for statistical
+computing and graphics and is free software. R is needed to run the
+application, instructions that follow describe how to install the R
+program.
 
-The program distributed here is shared in the hope that this will be
-useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. This work is
-licensed under the GNU General Public License v3.0, a link to the
-details of the license can be found at:
+This version of Ideanet is a development version, improvements to the
+code and additional functions are in the process of being developed and
+tested. The code has been developed and tested in a Windows PC
+environment. This application has **not** been developed for or tested
+in a macOS environment.
+
+The Ideanet application is free to use. The Ideanet program is shared in
+the hope that this will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. This work is licensed under the GNU General Public License
+v3.0, a link to the details of the license can be found at:
 [License](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
-You are free to use this program, share with others and make and share
-changes to the code. If you do make changes, the software license
-requires that the code and any ensuing modifications be made publicly
-available, allowing the entire community to benefit.
 
 Send suggestions, questions, improvements, etc. to:
 <info@ideanetworks.io>
@@ -73,16 +74,18 @@ patched](https://cran.r-project.org/bin/windows/base/rpatched.html).
 
 In next steps I describe how to run code that will install and launch
 the application. The downloaded R program has an interface that can be
-used to install and run the code below. However, I prefer to use RStudio
-for launching and running code. If you wish to also use RStudio a free
-version of Rstudio desktop can be accessed here:
-[Rstudio](https://www.rstudio.com/products/rstudio/download/ "Download free desktop version").
+used to install and run the code below. You may also use RStudio for
+launching and running code. If you wish to use RStudio, a free version
+of Rstudio desktop is available here [Download free desktop version of
+RStudio](https://www.rstudio.com/products/rstudio/download/).
 
 ### 2. Install Ideanet application
 
 Run the following code to install the application. This code only needs
 to be run once to install the application. Run this code again, in the
 future, as needed, to install newer versions of the Ideanet application.
+Choose which one of the following installation procedures applies to
+you.
 
 #### RStudio install
 
