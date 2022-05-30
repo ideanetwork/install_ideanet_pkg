@@ -1,7 +1,7 @@
 Ideanet
 ================
 Dan McLinden - Idea Networks, LLC
-2022-05-27
+2022-05-30
 
 ### About Idea Networks
 
@@ -81,69 +81,32 @@ RStudio](https://www.rstudio.com/products/rstudio/download/).
 
 ### 2. Install Ideanet application
 
-Run the following code to install the application. This code only needs
-to be run once to install the application. Run this code again, in the
-future, as needed, to install newer versions of the Ideanet application.
-Choose which one of the following installation procedures applies to
-you.
-
-#### RStudio install
-
--   If you downloaded the file “*ideanet_install.R*” then you can
-    double-click on that file to open Rstudio with the code in the
-    source window.
-
--   If RStudio is already open then, on the menu click on *File, Open
-    file,* and navigate to the file and click to open.
-
--   If you do not have the the file “*ideanet_install.R*” then copy and
-    paste the code below into RStudio *source* window.
-
--   Once the code is visible in the RStudio source window, click on
-    *Ctrl+Alt+R* to run the code or, using the RStudio menu, click on
-    *Code*, *Run region*, *Run all*.
+Run the installation code to install the application. This code only
+needs to be run once to install the application. Run this code again, in
+the future, as needed, to install newer versions of the Ideanet
+application. Choose which one of the following installation procedures
+applies to you.
 
 #### Base R install
 
--   If you downloaded the file “*ideanet_install.R*” you can
-    double-click on that file to open R or if R is already open then, on
-    the menu, click on *open script* and navigate to the file.
+If you downloaded the file “*ideanet_install.R*” you can double-click on
+that file to open R or if R is already open then, on the menu, click on
+*open script* and navigate to the file. Once the code is available then,
+on the menu click on *Edit*, *Run All*.
 
--   If you do not have the file “*ideanet_install.R*” then from the
-    menu, click on *File, New script* and then copy and paste the code
-    below into blank editor window.
+#### RStudio install
 
--   Once the code is available then, on the menu click on *Edit*, *Run
-    All*.
-
-``` r
-options(repos=structure(c(CRAN="http://cran.us.r-project.org")))#cran mirror
-
-if (!require(rlang)){
-  install.packages("rlang")
-  suppressPackageStartupMessages(library(rlang))
-}
-if (!require(pacman)){
-  install.packages("pacman")
-  suppressPackageStartupMessages(library(pacman))
-}
-if (!require(devtools)){
-  install.packages("devtools")
-  suppressPackageStartupMessages(library(devtools))
-}
-
-pacman::p_unlock() # remove 00lock if present
-
-remotes::install_github("ideanetwork/ideanet", force = TRUE) 
-```
+Double-click on “*ideanet_install.R*” to open Rstudio with the code in
+the source window. If RStudio is already open then, on the menu click on
+*File, Open file,* and navigate to the file and click to open. Once the
+code is visible in the RStudio source window, click on *Ctrl+Alt+R* to
+run the code or, using the RStudio menu, click on *Code*, *Run region*,
+*Run all*.
 
 ### 3. Run the Ideanet application
 
-If you have a copy of “*run_ideanet.R”* on your computer then follow the
-same procedure as described above for installing Ideanet except, in this
-case use *run_ideanet.R*. If you do not have the the file”run_ideanet.R”
-then copy and paste the code below following the same procedures
-described above.
+Follow the same procedure as described above for installing Ideanet
+except, in this case use *run_ideanet.R* to start the app.
 
 Once executed the code will open the program. Sometimes the Ideanet app
 will open behind other windows applications. Look on your task bar for
@@ -154,18 +117,6 @@ Note that once the Ideanet application is open, R and RStudio will not
 accept input because the Ideanet application has control of R
 environment. To stop using the app and regain control of R or RStudio,
 in the Ideanet menu click *Quit, Close app*.
-
-``` r
-options(repos=structure(c(CRAN="http://cran.us.r-project.org")))#cran mirror 
-
-if (!require(pacman)){
-  install.packages("pacman")
-  suppressPackageStartupMessages(library(pacman))
-}
-pacman::p_unlock() # remove 00lock if present
-
-Ideanet::ideanet() # open the application.
-```
 
 ### 4. Use the Ideanet application
 
